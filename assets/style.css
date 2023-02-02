@@ -10,7 +10,10 @@ root {
 
 body {
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 }
+
+
 
 .text-center {
   text-align: center !important;
@@ -52,6 +55,7 @@ header {
   width: 100%;
   display: block;
   color: white;
+
 }
 
 header h1 {
@@ -67,7 +71,8 @@ header h1 {
 
 aside {
   width: 350px;
-  margin-right: 20px;
+  height: 99.5%;
+  margin-right: 25px;
 }
 
 
@@ -87,13 +92,13 @@ aside input {
 
 aside .search-button {
   border: 0px;
-  background-color: #000000d1;
+  background-color: rgba(0, 0, 0);
   color: rgb(255, 255, 255)
 }
 
 aside .search-button:hover {
   border: 0px;
-  background-color: rgba(173, 173, 173, 0.9);
+  background-color: rgba(0, 0, 0, 0.638);
   color: rgb(255, 255, 255);
 }
 
@@ -101,6 +106,9 @@ aside .search-list button {
   color: rgb(0, 0, 0);
 }
 
+aside .search-list button:hover {
+  opacity: 80%;
+}
 main {
   width: 100%;
 }
@@ -112,7 +120,7 @@ main #today * {
 
 main #today {
   width: 50%;
-  border: 1px solid #42A3B9;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 5px;
 }
 
@@ -120,14 +128,19 @@ main .forecast-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 5px;
+  padding: 5px;
 }
 
 main .forecast-card {
   padding: 5px;
-  background-color: rgb(66, 163, 185, 0.9) ;
+  background-color: rgb(66, 163, 185, 0.9);
   color: #fff;
 }
 
 section #today {
   margin: 10px 100px;
+}
+
+#form-heading {
+  color: rgb(0, 0, 0);
 }
