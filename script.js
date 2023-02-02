@@ -1,4 +1,4 @@
-
+// Fetching Location Data
 async function fetchLocationData(input){
 
    const myApiKey = "5e0b4d6052160b2f958a7399b9657052"
@@ -13,7 +13,7 @@ async function fetchLocationData(input){
 
 
 
-
+// Fetching Weather Data
 async function fetchWeatherData(input) {
    const myApiKey = "5e0b4d6052160b2f958a7399b9657052"
 
