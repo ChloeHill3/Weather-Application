@@ -22,7 +22,6 @@ body {
 }
 
 .column {
-
   flex-direction: column;
 }
 
@@ -31,12 +30,13 @@ body {
 }
 
 .radius {
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 h2 {
   font-size: 30px;
 }
+
 h3 {
   font-size: 24px;
 }
@@ -62,56 +62,67 @@ header h1 {
 
 aside {
   width: 350px;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 
-input, button, .search-list *{
+input,
+button,
+.search-list * {
   width: 350px;
   margin: 8px auto;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 8px 15px;
-} 
+}
 
 aside input {
   border: 1px solid var(--primary);
+  border-radius: 10px;
 }
 
 aside .search-button {
-  border: 0px ;
-  background-color: #007bff;
-  color: #fff;
+  border: 0px;
+  background-color: #000000d1;
+  color: rgb(255, 255, 255)
 }
 
-aside .search-list p {
-  border: 0px ;
-  background-color: lightslategrey;
-  color: #fff;
+aside .search-button:hover {
+  border: 0px;
+  background-color: rgba(173, 173, 173, 0.9);
+  color: rgb(255, 255, 255);
+}
+
+aside .search-list button {
+  color: rgb(0, 0, 0);
 }
 
 main {
   width: 100%;
 }
 
-main .forecast-card *, main #today * {
+main .forecast-card *,
+main #today * {
   margin-bottom: 8px;
 }
 
 main #today {
-  margin: 20px 0px;
-  border: 1px solid;
+  width: 50%;
+  border: 1px solid #42A3B9;
   padding: 5px;
 }
 
 main .forecast-list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 5px;
 }
 
 main .forecast-card {
   padding: 5px;
-  background-color: #167AF6;
+  background-color: #42A3B9;
   color: #fff;
 }
 
+section #today {
+  margin: 10px 100px;
+}
