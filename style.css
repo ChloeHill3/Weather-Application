@@ -33,6 +33,11 @@ body {
   border-radius: 10px;
 }
 
+h1 {
+  display: flex;
+  align-self: center;
+}
+
 h2 {
   font-size: 30px;
 }
@@ -119,7 +124,7 @@ main .forecast-list {
 
 main .forecast-card {
   padding: 5px;
-  background-color: #42A3B9;
+  background-color: rgb(66, 163, 185, 0.9) ;
   color: #fff;
 }
 
