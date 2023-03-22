@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <link rel="stylesheet" href="./assets/style.css">
   <title>Weather Dashboard</title>
 </head>
@@ -14,42 +16,48 @@
 <body>
   <header class="text-center">
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-      <h1 class="heading">Weather Dashboard</h1>
+      <h1 class="heading font-effect-emboss">Weather Dashboard</h1>
     </nav>
   </header>
 
-  
+
   <div class="container" style="max-width: 1400px">
     <aside>
       <h2 class="heading text-center" id="form-heading">
-        Search for a City
-      </h2>
+        Search for a City </h2>
+      <hr class="hr">
       <form class="form" id="search-form">
-        <input class="form-control" type="search" placeholder="London">
+        <input class="city-search" type="input" placeholder="London" id="search-input">
         <div class="input-group-append"></div>
         <button class="search-button radius btn-secondary" id="search-button" type="submit">Search</button>
-      </form>
-      
-      <div class="search-list text-enter radius" id="history">
-        <button type="button" class="btn btn-light">Berlin, Germany</button>
-        <button type="button" class="btn btn-light">Paris, France</button>
-        <button type="button" class="btn btn-light">Bristol, United Kingdom</button>
-        <button type="button" class="btn btn-light">Alicante, Spain</button>
-        <button type="button" class="btn btn-light">Rome, Italy</button>
 
+      </form>
+      <hr class="hr">
+
+      <div class="search-list text-enter radius" id="history">
+        <ul id="search-history">
+          <button type="button" class="btn btn-light">Berlin, Germany</button>
+          <button type="button" class="btn btn-light">Paris, France</button>
+          <button type="button" class="btn btn-light">Bristol, United Kingdom</button>
+          <button type="button" class="btn btn-light">Alicante, Spain</button>
+          <button type="button" class="btn btn-light">Rome, Italy</button>
+        </ul>
       </div>
     </aside>
 
 
     <main class="column">
       <section class="weather-today radius" id="today">
-        <h2 class="heading">Date</h2>
-        <p>icon</p>
-        <p>Temp:</p>
-        <p>Wind:</p>
-        <p>Humidity:</p>
-        <p>UV Index:</p>
+        <h2 class="heading">Today</h2>
+        <span class="date1"></span>
+        <hr class="hr">
+        <img class="icon1" src="https://openweathermap.org/img/wn/01d.png" alt=""></p>
+        <p class="description1"></p>
+        <p class="temp1">Temp:</p>
+        <p class="wind1">Wind:</p>
+        <p class="humidity1">Humidity:</p>
       </section>
+      <hr class="hr">
 
 
       <section class="forecast" id="forecast">
@@ -57,47 +65,47 @@
         <div class="forecast-list">
           <div class="forecast-card radius">
             <h3>02/02/2023</h3>
-            <p>icon</p>
-            <p>Temp:</p>
-            <p>Wind:</p>
-            <p>Humidity:</p>
-            <p>UV Index:</p>
+            <img class="icon" src="https://openweathermap.org/img/wn/01d.png" alt=""></p>
+            <p class="description"></p>
+            <p class="temp">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p>
 
           </div>
           <div class="forecast-card radius">
             <h3>03/02/2023</h3>
-            <p>icon</p>
-            <p>Temp:</p>
-            <p>Wind:</p>
-            <p>Humidity:</p>
-            <p>UV Index:</p>
+            <img class="icon" src="https://openweathermap.org/img/wn/01d.png" alt=""></p>
+            <p class="description"></p>
+            <p class="temp">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p>
 
           </div>
           <div class="forecast-card radius">
             <h3>04/02/2023</h3>
-            <p>icon</p>
-            <p>Temp:</p>
-            <p>Wind:</p>
-            <p>Humidity:</p>
-            <p>UV Index:</p>
+            <img class="icon" src="https://openweathermap.org/img/wn/01d.png" alt=""></p>
+            <p class="description"></p>
+            <p class="temp">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p>
 
           </div>
           <div class="forecast-card radius">
             <h3>05/02/2023</h3>
-            <p>icon</p>
-            <p>Temp:</p>
-            <p>Wind:</p>
-            <p>Humidity:</p>
-            <p>UV Index:</p>
+            <img class="icon" src="https://openweathermap.org/img/wn/01d.png" alt=""></p>
+            <p class="description"></p>
+            <p class="temp">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p>
 
           </div>
           <div class="forecast-card radius">
-            <h3>06/02/2023</h3>
-            <p>icon</p>
-            <p>Temp:</p>
-            <p>Wind:</p>
-            <p>Humidity:</p>
-            <p>UV Index:</p>
+            <h3 id="date">06/02/2023</h3>
+            <img class="icon" src="https://openweathermap.org/img/wn/01d.png" alt=""></p>
+            <p class="description"></p>
+            <p class="temp">Temp:</p>
+            <p class="wind">Wind:</p>
+            <p class="humidity">Humidity:</p>
           </div>
         </div>
   </div>
